@@ -17,4 +17,6 @@ if __name__ == "__main__":
     calculator = Calc(screen_field, master=window)
     calculator.grid(row=1)
 
+    calculator.bind('<Return>', command=screen_field.evaluate)
+
     calculator.mainloop()
